@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  margin-top: 10%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+  padding: 15px;
+  min-width: 80px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}
