@@ -11,16 +11,14 @@
   <meta property="og:url" content="https://sanchezdimision.github.io/sanchezdimisiontoken/" />
   <link rel="canonical" href="https://sanchezdimision.github.io/sanchezdimisiontoken/" />
   <meta name="theme-color" content="#000000" />
-  
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            display: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Inter','ui-sans-serif','system-ui','sans-serif'],
+            body: ['Inter','ui-sans-serif','system-ui','sans-serif'],
           },
           colors: {
             solana1: '#9945FF',
@@ -34,11 +32,9 @@
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    .glow { box-shadow: 0 0 0px rgba(153,69,255,0.0); transition: box-shadow .25s ease, transform .25s ease; }
+    .glow { transition: box-shadow .25s ease, transform .25s ease; }
     .glow:hover { box-shadow: 0 0 24px rgba(153,69,255,0.35); transform: translateY(-1px); }
     .donut-segment { transition: opacity .2s ease; }
     .donut-segment:hover { opacity: .85; }
@@ -46,16 +42,10 @@
 </head>
 <body class="bg-black text-white font-body antialiased">
   <!-- NAV -->
-  <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-black/40 bg-black/60 border-b border-white/10">
+  <header class="sticky top-0 z-30 backdrop-blur bg-black/70 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="h-16 flex items-center justify-between">
-        <a href="https://sanchezdimision.github.io/sanchezdimisiontoken/" class="flex items-center gap-3 group">
-          <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
-            <rect width="64" height="64" rx="12" fill="#111827"/>
-            <path d="M16 22h32v6H16z" fill="#e11d48"/>
-            <path d="M16 36h32v6H16z" fill="#f59e0b"/>
-            <circle cx="52" cy="12" r="6" fill="#22c55e"/>
-          </svg>
+        <a href="https://sanchezdimision.github.io/sanchezdimisiontoken/" class="flex items-center gap-3">
           <span class="font-display font-extrabold text-xl tracking-tight">SDT</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -66,25 +56,126 @@
           <a href="#comunidad" class="hover:text-solana2">Comunidad</a>
           <a href="#wallets" class="hover:text-solana2">Wallets</a>
         </nav>
-        <a href="#participar" class="hidden md:inline-flex glow px-4 py-2 rounded-xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Únete al movimiento</a>
-        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg bg-white/10">
-          <span class="sr-only">Abrir menú</span>
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </div>
-    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
-      <div class="px-4 py-3 space-y-2 text-sm">
-        <a href="#que-es" class="block py-1">Qué es</a>
-        <a href="#tokenomics" class="block py-1">Tokenomics</a>
-        <a href="#roadmap" class="block py-1">Roadmap</a>
-        <a href="#participar" class="block py-1">Cómo participar</a>
-        <a href="#comunidad" class="block py-1">Comunidad</a>
-        <a href="#wallets" class="block py-1">Wallets</a>
       </div>
     </div>
   </header>
-  <!-- resto del contenido sin cambios ... -->
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-hero-gradient">
+    <div class="max-w-7xl mx-auto px-6 py-20 lg:py-32">
+      <h1 class="text-5xl font-extrabold leading-tight">Sánchez Dimisión Token (SDT)</h1>
+      <p class="mt-6 text-lg text-white/80 max-w-2xl">La primera memecoin política de España en Solana. Profesional, transparente y super viral. Representa la voz del pueblo contra el gobierno de Sánchez.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#participar" class="glow px-6 py-3 rounded-2xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Participar en la preventa</a>
+        <a href="#tokenomics" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Ver tokenomics</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUE ES -->
+  <section id="que-es" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold">¿Qué es SDT?</h2>
+      <p class="mt-6 text-lg text-white/80">SDT es un token de comunidad que nace como <strong>símbolo de protesta política en España</strong>. Aprovecha el poder del humor, la indignación y la unión del pueblo para convertirse en un activo viral en la blockchain Solana. No es solo una criptomoneda: es un movimiento social.</p>
+      <ul class="mt-6 space-y-3 text-white/80">
+        <li>✔ Proyecto transparente: wallets públicas, liquidez bloqueada, metadata inmutable.</li>
+        <li>✔ Profesional en imagen y viral en espíritu: un puente entre el mundo cripto y la política popular.</li>
+        <li>✔ Comunidad primero: concursos de memes, airdrops y votaciones populares.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TOKENOMICS -->
+  <section id="tokenomics" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold">Tokenomics</h2>
+      <p class="mt-6 text-lg text-white/80">Distribución de 1,000,000,000 SDT:</p>
+      <ul class="mt-6 space-y-2 text-white/80">
+        <li>• Marketing: 520M (52%)</li>
+        <li>• Liquidez: 210M (21%)</li>
+        <li>• Equipo: 150M (15%)</li>
+        <li>• Reserva: 120M (12%)</li>
+      </ul>
+      <p class="mt-4 text-sm text-white/60">Parte de Marketing se dedicará a preventas escalonadas para generar liquidez y confianza.</p>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold">Roadmap</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 border border-white/10 rounded-2xl">
+          <h3 class="font-bold text-xl">Q3 2025: Fundación</h3>
+          <ul class="mt-4 text-white/80 text-sm space-y-1">
+            <li>• Creación del token en Solana</li>
+            <li>• Web oficial (GitHub Pages)</li>
+            <li>• Lanzamiento redes sociales</li>
+          </ul>
+        </div>
+        <div class="p-6 border border-white/10 rounded-2xl">
+          <h3 class="font-bold text-xl">Q4 2025: Lanzamiento</h3>
+          <ul class="mt-4 text-white/80 text-sm space-y-1">
+            <li>• Preventa en 3 rondas</li>
+            <li>• Listado en Raydium/Orca</li>
+            <li>• Bloqueo de liquidez</li>
+          </ul>
+        </div>
+        <div class="p-6 border border-white/10 rounded-2xl">
+          <h3 class="font-bold text-xl">2026: Expansión</h3>
+          <ul class="mt-4 text-white/80 text-sm space-y-1">
+            <li>• CoinGecko & CoinMarketCap</li>
+            <li>• Alianzas con influencers y comunidades</li>
+            <li>• Movimiento global anti-corrupción</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO PARTICIPAR -->
+  <section id="participar" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold">Cómo participar</h2>
+      <ol class="mt-6 space-y-4 text-white/80">
+        <li>1) Descarga e instala <strong>Phantom Wallet</strong>.</li>
+        <li>2) Carga SOL desde un exchange.</li>
+        <li>3) Envía SOL a la <strong>wallet oficial SDT-Sale</strong> y recibirás SDT según la ronda activa.</li>
+        <li>4) Únete a nuestra comunidad en X/Telegram para actualizaciones.</li>
+      </ol>
+      <p class="mt-4 text-sm text-white/60">Transparencia: los precios y límites por ronda serán anunciados públicamente.</p>
+    </div>
+  </section>
+
+  <!-- WALLETS -->
+  <section id="wallets" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold">Wallets oficiales</h2>
+      <p class="mt-4 text-white/70 text-sm">Consulta estas wallets en Solscan para verificar transparencia:</p>
+      <ul class="mt-6 space-y-2 text-white/80 text-sm">
+        <li>Liquidity — Dirección: PEGAR_AQUI_LIQUI_ADDR</li>
+        <li>Marketing — Dirección: PEGAR_AQUI_MARKET_ADDR</li>
+        <li>Reserve — Dirección: PEGAR_AQUI_RESERVE_ADDR</li>
+        <li>Team — Dirección: PEGAR_AQUI_TEAM_ADDR</li>
+      </ul>
+      <p class="mt-4 text-amber-200">Próximamente: Wallet oficial SDT-Sale para preventas.</p>
+    </div>
+  </section>
+
+  <!-- COMUNIDAD -->
+  <section id="comunidad" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold">Comunidad SDT</h2>
+      <p class="mt-6 text-white/80">El alma de SDT es su comunidad. Comparte memes, participa en sorteos y vota iniciativas. El token del pueblo español contra Sánchez.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#" class="glow px-6 py-3 rounded-2xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Twitter / X</a>
+        <a href="#" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Telegram</a>
+        <a href="#" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="border-t border-white/10">
     <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-white/60">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -94,9 +185,6 @@
     </div>
   </footer>
   <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
