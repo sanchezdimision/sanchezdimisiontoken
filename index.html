@@ -1,15 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>SDT - Coming Soon</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sánchez Dimisión Token (SDT) — La memecoin del pueblo</title>
+  <meta name="description" content="Sánchez Dimisión Token (SDT) — Memecoin en Solana. Profesional, transparente y viral. Únete al movimiento." />
+  <meta property="og:title" content="Sánchez Dimisión Token (SDT)" />
+  <meta property="og:description" content="La primera memecoin política de España en Solana. Únete al movimiento." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sanchezdimision.github.io/sanchezdimisiontoken/" />
+  <link rel="canonical" href="https://sanchezdimision.github.io/sanchezdimisiontoken/" />
+  <meta name="theme-color" content="#000000" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            solana1: '#9945FF',
+            solana2: '#14F195',
+            solana3: '#19FB9B',
+          },
+          backgroundImage: {
+            'hero-gradient': 'radial-gradient(80% 80% at 50% 20%, rgba(153,69,255,0.25) 0%, rgba(20,241,149,0.15) 40%, rgba(0,0,0,0) 70%)',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .glow { box-shadow: 0 0 0px rgba(153,69,255,0.0); transition: box-shadow .25s ease, transform .25s ease; }
+    .glow:hover { box-shadow: 0 0 24px rgba(153,69,255,0.35); transform: translateY(-1px); }
+    .donut-segment { transition: opacity .2s ease; }
+    .donut-segment:hover { opacity: .85; }
+  </style>
 </head>
-<body>
-  <div class="coming-soon-container">
-    <h1>Coming Soon!</h1>
-  </div>
-
-  <script src="script.js"></script>
+<body class="bg-black text-white font-body antialiased">
+  <!-- NAV -->
+  <header class="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-black/40 bg-black/60 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <a href="https://sanchezdimision.github.io/sanchezdimisiontoken/" class="flex items-center gap-3 group">
+          <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+            <rect width="64" height="64" rx="12" fill="#111827"/>
+            <path d="M16 22h32v6H16z" fill="#e11d48"/>
+            <path d="M16 36h32v6H16z" fill="#f59e0b"/>
+            <circle cx="52" cy="12" r="6" fill="#22c55e"/>
+          </svg>
+          <span class="font-display font-extrabold text-xl tracking-tight">SDT</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#que-es" class="hover:text-solana2">Qué es</a>
+          <a href="#tokenomics" class="hover:text-solana2">Tokenomics</a>
+          <a href="#roadmap" class="hover:text-solana2">Roadmap</a>
+          <a href="#participar" class="hover:text-solana2">Cómo participar</a>
+          <a href="#comunidad" class="hover:text-solana2">Comunidad</a>
+          <a href="#wallets" class="hover:text-solana2">Wallets</a>
+        </nav>
+        <a href="#participar" class="hidden md:inline-flex glow px-4 py-2 rounded-xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Únete al movimiento</a>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg bg-white/10">
+          <span class="sr-only">Abrir menú</span>
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+      <div class="px-4 py-3 space-y-2 text-sm">
+        <a href="#que-es" class="block py-1">Qué es</a>
+        <a href="#tokenomics" class="block py-1">Tokenomics</a>
+        <a href="#roadmap" class="block py-1">Roadmap</a>
+        <a href="#participar" class="block py-1">Cómo participar</a>
+        <a href="#comunidad" class="block py-1">Comunidad</a>
+        <a href="#wallets" class="block py-1">Wallets</a>
+      </div>
+    </div>
+  </header>
+  <!-- resto del contenido sin cambios ... -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-white/60">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <p>© <span id="year"></span> SDT — Sánchez Dimisión Token. Proyecto de comunidad en Solana.</p>
+        <p><a href="https://sanchezdimision.github.io/sanchezdimisiontoken/" class="hover:text-white">sanchezdimision.github.io/sanchezdimisiontoken</a></p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
