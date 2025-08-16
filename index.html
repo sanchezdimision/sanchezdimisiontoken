@@ -9,8 +9,20 @@
   <meta property="og:description" content="La primera memecoin política de España en Solana. Únete al movimiento." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sanchezdimision.github.io/sanchezdimisiontoken/" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/sanchezdimision/sanchezdimisiontoken/main/SDToken-Blockchain.png" />
   <link rel="canonical" href="https://sanchezdimision.github.io/sanchezdimisiontoken/" />
+  <link rel="icon" href="https://raw.githubusercontent.com/sanchezdimision/sanchezdimisiontoken/main/SDToken-Blockchain.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/sanchezdimision/sanchezdimisiontoken/main/SDToken-Blockchain.png" />
   <meta name="theme-color" content="#000000" />
+  <!-- Open Graph / Twitter for rich previews -->
+  <meta property="og:site_name" content="Sánchez Dimisión Token (SDT)" />
+  <meta property="og:image:alt" content="Logo oficial de Sánchez Dimisión Token (SDT)" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sánchez Dimisión Token (SDT) — La memecoin del pueblo" />
+  <meta name="twitter:description" content="La primera memecoin política de España en Solana. Únete al movimiento." />
+  <meta name="twitter:image" content="https://github.com/sanchezdimision/sanchezdimisiontoken/blob/main/SDToken-Blockchain.png?raw=true" />
+  <!-- App icons -->
+  <link rel="apple-touch-icon" href="https://github.com/sanchezdimision/sanchezdimisiontoken/blob/main/SDToken-Blockchain.png?raw=true" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -46,6 +58,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="h-16 flex items-center justify-between">
         <a href="https://sanchezdimision.github.io/sanchezdimisiontoken/" class="flex items-center gap-3">
+          <img src="https://raw.githubusercontent.com/sanchezdimision/sanchezdimisiontoken/main/SDToken-Blockchain.png" alt="SDT Logo" class="h-8 w-8 rounded-full" />
           <span class="font-display font-extrabold text-xl tracking-tight">SDT</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -63,11 +76,20 @@
   <!-- HERO -->
   <section class="relative overflow-hidden bg-hero-gradient">
     <div class="max-w-7xl mx-auto px-6 py-20 lg:py-32">
-      <h1 class="text-5xl font-extrabold leading-tight">Sánchez Dimisión Token (SDT)</h1>
-      <p class="mt-6 text-lg text-white/80 max-w-2xl">La primera memecoin política de España en Solana. Profesional, transparente y super viral. Representa la voz del pueblo contra el gobierno de Sánchez.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="#participar" class="glow px-6 py-3 rounded-2xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Participar en la preventa</a>
-        <a href="#tokenomics" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Ver tokenomics</a>
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-5xl font-extrabold leading-tight">Sánchez Dimisión Token (SDT)</h1>
+          <p class="mt-6 text-lg text-white/80 max-w-2xl">La primera memecoin política de España en Solana. Profesional, transparente y super viral. Representa la voz del pueblo contra el gobierno de Sánchez.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#participar" class="glow px-6 py-3 rounded-2xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Participar en la preventa</a>
+            <a href="#tokenomics" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Ver tokenomics</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-square w-full max-w-md mx-auto rounded-3xl bg-white/5 border border-white/10 p-4 flex items-center justify-center">
+            <img src="https://raw.githubusercontent.com/sanchezdimision/sanchezdimisiontoken/main/SDToken-Blockchain.png" alt="Logo oficial de SDT" class="w-full h-full object-contain" loading="eager" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -75,28 +97,61 @@
   <!-- QUE ES -->
   <section id="que-es" class="py-20 border-t border-white/10">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-extrabold">¿Qué es SDT?</h2>
-      <p class="mt-6 text-lg text-white/80">SDT es un token de comunidad que nace como <strong>símbolo de protesta política en España</strong>. Aprovecha el poder del humor, la indignación y la unión del pueblo para convertirse en un activo viral en la blockchain Solana. No es solo una criptomoneda: es un movimiento social.</p>
-      <ul class="mt-6 space-y-3 text-white/80">
-        <li>✔ Proyecto transparente: wallets públicas, liquidez bloqueada, metadata inmutable.</li>
-        <li>✔ Profesional en imagen y viral en espíritu: un puente entre el mundo cripto y la política popular.</li>
-        <li>✔ Comunidad primero: concursos de memes, airdrops y votaciones populares.</li>
-      </ul>
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-4xl font-extrabold">¿Qué es SDT?</h2>
+          <p class="mt-6 text-lg text-white/80">SDT es un <strong>token de comunidad</strong> nacido en España que combina humor político y cultura meme con la velocidad y el bajo coste de <strong>Solana</strong>. Es un símbolo para canalizar la voz del pueblo y premiar a su comunidad.</p>
+          <ul class="mt-6 space-y-3 text-white/80">
+            <li class="flex gap-3"><span class="mt-2 w-2.5 h-2.5 rounded-full bg-solana2"></span>Transparencia: wallets públicas, metadata inmutable, liquidez bloqueada tras el listing.</li>
+            <li class="flex gap-3"><span class="mt-2 w-2.5 h-2.5 rounded-full bg-solana2"></span>Profesional + viral: branding serio con corazón meme para máxima difusión.</li>
+            <li class="flex gap-3"><span class="mt-2 w-2.5 h-2.5 rounded-full bg-solana2"></span>Comunidad primero: airdrops, concursos y votaciones abiertas.</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl border border-white/10 p-8 bg-white/[.03]">
+          <h3 class="font-bold text-xl">Datos rápidos</h3>
+          <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="rounded-xl bg-black/50 border border-white/10 p-4"><div class="text-2xl font-extrabold">1B</div><div class="text-xs text-white/70">Supply</div></div>
+            <div class="rounded-xl bg-black/50 border border-white/10 p-4"><div class="text-2xl font-extrabold">SOL</div><div class="text-xs text-white/70">Blockchain</div></div>
+            <div class="rounded-xl bg-black/50 border border-white/10 p-4"><div class="text-2xl font-extrabold">Rápida</div><div class="text-xs text-white/70">Comisiones bajas</div></div>
+            <div class="rounded-xl bg-black/50 border border-white/10 p-4"><div class="text-2xl font-extrabold">Viral</div><div class="text-xs text-white/70">Espíritu meme</div></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- TOKENOMICS -->
   <section id="tokenomics" class="py-20 border-t border-white/10">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-extrabold">Tokenomics</h2>
-      <p class="mt-6 text-lg text-white/80">Distribución de 1,000,000,000 SDT:</p>
-      <ul class="mt-6 space-y-2 text-white/80">
-        <li>• Marketing: 520M (52%)</li>
-        <li>• Liquidez: 210M (21%)</li>
-        <li>• Equipo: 150M (15%)</li>
-        <li>• Reserva: 120M (12%)</li>
-      </ul>
-      <p class="mt-4 text-sm text-white/60">Parte de Marketing se dedicará a preventas escalonadas para generar liquidez y confianza.</p>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-extrabold">Tokenomics</h2>
+          <p class="mt-6 text-lg text-white/80">Distribución actual del supply (1,000,000,000 SDT):</p>
+          <ul class="mt-6 space-y-2 text-white/80">
+            <li>• <strong>Marketing:</strong> 520M (52%)</li>
+            <li>• <strong>Liquidity:</strong> 210M (21%)</li>
+            <li>• <strong>Team:</strong> 150M (15%)</li>
+            <li>• <strong>Reserve:</strong> 120M (12%)</li>
+          </ul>
+          <p class="mt-4 text-sm text-white/60">Nota: Hasta 200M de Marketing podrán dedicarse a <em>preventa escalonada</em> antes del listing, para reforzar la liquidez y premiar a los early supporters.</p>
+        </div>
+        <div class="flex items-center justify-center">
+          <!-- Donut chart (SVG) -->
+          <svg viewBox="0 0 42 42" class="w-64 h-64">
+            <circle cx="21" cy="21" r="15.915" fill="#0b0b0b"/>
+            <circle cx="21" cy="21" r="15.915" fill="transparent" stroke="#1f2937" stroke-width="6"/>
+            <!-- Marketing 52% -->
+            <circle class="donut-segment" cx="21" cy="21" r="15.915" fill="transparent" stroke="#14F195" stroke-width="6" stroke-dasharray="52 48" stroke-dashoffset="25"/>
+            <!-- Liquidity 21% -->
+            <circle class="donut-segment" cx="21" cy="21" r="15.915" fill="transparent" stroke="#9945FF" stroke-width="6" stroke-dasharray="21 79" stroke-dashoffset="-27"/>
+            <!-- Team 15% -->
+            <circle class="donut-segment" cx="21" cy="21" r="15.915" fill="transparent" stroke="#19FB9B" stroke-width="6" stroke-dasharray="15 85" stroke-dashoffset="-48"/>
+            <!-- Reserve 12% -->
+            <circle class="donut-segment" cx="21" cy="21" r="15.915" fill="transparent" stroke="#f59e0b" stroke-width="6" stroke-dasharray="12 88" stroke-dashoffset="-65"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="6" font-weight="700">SDT</text>
+          </svg>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -105,24 +160,27 @@
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-extrabold">Roadmap</h2>
       <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <div class="p-6 border border-white/10 rounded-2xl">
-          <h3 class="font-bold text-xl">Q3 2025: Fundación</h3>
+        <div class="p-6 border border-white/10 rounded-2xl bg-white/[.03]">
+          <div class="text-xs uppercase tracking-wider text-white/60">Q3 2025</div>
+          <h3 class="mt-2 font-bold text-xl">Fundación</h3>
           <ul class="mt-4 text-white/80 text-sm space-y-1">
-            <li>• Creación del token en Solana</li>
+            <li>• Token creado en Solana</li>
             <li>• Web oficial (GitHub Pages)</li>
-            <li>• Lanzamiento redes sociales</li>
+            <li>• Lanzamiento de redes</li>
           </ul>
         </div>
-        <div class="p-6 border border-white/10 rounded-2xl">
-          <h3 class="font-bold text-xl">Q4 2025: Lanzamiento</h3>
+        <div class="p-6 border border-white/10 rounded-2xl bg-white/[.03]">
+          <div class="text-xs uppercase tracking-wider text-white/60">Q4 2025</div>
+          <h3 class="mt-2 font-bold text-xl">Lanzamiento</h3>
           <ul class="mt-4 text-white/80 text-sm space-y-1">
             <li>• Preventa en 3 rondas</li>
             <li>• Listado en Raydium/Orca</li>
             <li>• Bloqueo de liquidez</li>
           </ul>
         </div>
-        <div class="p-6 border border-white/10 rounded-2xl">
-          <h3 class="font-bold text-xl">2026: Expansión</h3>
+        <div class="p-6 border border-white/10 rounded-2xl bg-white/[.03]">
+          <div class="text-xs uppercase tracking-wider text-white/60">2026</div>
+          <h3 class="mt-2 font-bold text-xl">Expansión</h3>
           <ul class="mt-4 text-white/80 text-sm space-y-1">
             <li>• CoinGecko & CoinMarketCap</li>
             <li>• Alianzas con influencers y comunidades</li>
@@ -130,6 +188,15 @@
           </ul>
         </div>
       </div>
+      <p class="mt-6 text-white/70 text-sm">Lema: <span class="italic">“Más fuerte que una moción de censura.”</span></p>
+    </div>
+  </section>
+
+  <!-- AVISO PREVENTA / BANNER -->
+  <section class="py-4 border-t border-white/10 bg-white/[.03]">
+    <div class="max-w-7xl mx-auto px-6 text-sm text-white/80 flex flex-col md:flex-row items-center justify-between gap-3">
+      <div><strong>Próximamente:</strong> Publicación de la wallet <strong>SDT-Sale</strong> para preventas en 3 rondas.</div>
+      <a href="#participar" class="glow px-4 py-2 rounded-xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Cómo participar</a>
     </div>
   </section>
 
@@ -138,27 +205,39 @@
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-extrabold">Cómo participar</h2>
       <ol class="mt-6 space-y-4 text-white/80">
-        <li>1) Descarga e instala <strong>Phantom Wallet</strong>.</li>
-        <li>2) Carga SOL desde un exchange.</li>
-        <li>3) Envía SOL a la <strong>wallet oficial SDT-Sale</strong> y recibirás SDT según la ronda activa.</li>
-        <li>4) Únete a nuestra comunidad en X/Telegram para actualizaciones.</li>
+        <li><strong>1)</strong> Instala <strong>Phantom Wallet</strong> y guarda tu frase semilla en papel (nunca la compartas).</li>
+        <li><strong>2)</strong> Carga SOL desde un exchange (Binance, Kraken, etc.).</li>
+        <li><strong>3)</strong> Envía SOL a la <strong>wallet oficial SDT-Sale</strong> (se anunciará aquí y en redes) y recibirás SDT manualmente según la ronda activa.</li>
+        <li><strong>4)</strong> Únete a X/Telegram para ver anuncios y airdrops.</li>
       </ol>
-      <p class="mt-4 text-sm text-white/60">Transparencia: los precios y límites por ronda serán anunciados públicamente.</p>
+      <p class="mt-4 text-sm text-white/60">Los precios por ronda y límites por wallet se comunicarán de forma pública para garantizar igualdad.</p>
     </div>
   </section>
 
   <!-- WALLETS -->
   <section id="wallets" class="py-20 border-t border-white/10">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-extrabold">Wallets oficiales</h2>
-      <p class="mt-4 text-white/70 text-sm">Consulta estas wallets en Solscan para verificar transparencia:</p>
-      <ul class="mt-6 space-y-2 text-white/80 text-sm">
-        <li>Liquidity — Dirección: PEGAR_AQUI_LIQUI_ADDR</li>
-        <li>Marketing — Dirección: PEGAR_AQUI_MARKET_ADDR</li>
-        <li>Reserve — Dirección: PEGAR_AQUI_RESERVE_ADDR</li>
-        <li>Team — Dirección: PEGAR_AQUI_TEAM_ADDR</li>
-      </ul>
-      <p class="mt-4 text-amber-200">Próximamente: Wallet oficial SDT-Sale para preventas.</p>
+      <h2 class="text-4xl font-extrabold">Wallets oficiales (solo lectura)</h2>
+      <p class="mt-4 text-white/70 text-sm">Verifica siempre en Solana Explorer / Solscan.</p>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+        <div class="rounded-2xl border border-white/10 p-4 bg-white/[.03]"><div class="text-white/60 uppercase tracking-wider text-xs">Liquidity</div><div class="mt-1 font-mono break-all">[210M] Dirección: PEGAR_AQUI_LIQUI_ADDR</div></div>
+        <div class="rounded-2xl border border-white/10 p-4 bg-white/[.03]"><div class="text-white/60 uppercase tracking-wider text-xs">Marketing</div><div class="mt-1 font-mono break-all">[520M] Dirección: PEGAR_AQUI_MARKET_ADDR</div></div>
+        <div class="rounded-2xl border border-white/10 p-4 bg-white/[.03]"><div class="text-white/60 uppercase tracking-wider text-xs">Reserve</div><div class="mt-1 font-mono break-all">[120M] Dirección: PEGAR_AQUI_RESERVE_ADDR</div></div>
+        <div class="rounded-2xl border border-white/10 p-4 bg-white/[.03]"><div class="text-white/60 uppercase tracking-wider text-xs">Team</div><div class="mt-1 font-mono break-all">[150M] Dirección: PEGAR_AQUI_TEAM_ADDR</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold">Preguntas frecuentes</h2>
+      <div class="mt-8 space-y-6">
+        <details class="group border border-white/10 rounded-2xl p-5 bg-white/[.03]"><summary class="cursor-pointer font-semibold">¿Es SDT un consejo financiero?</summary><p class="mt-3 text-white/80 text-sm">No. SDT es una memecoin de comunidad con fines de entretenimiento. Haz tu propia investigación (DYOR) y no inviertas dinero que no puedas permitirte perder.</p></details>
+        <details class="group border border-white/10 rounded-2xl p-5 bg-white/[.03]"><summary class="cursor-pointer font-semibold">¿Cómo recibiré mis SDT en preventa?</summary><p class="mt-3 text-white/80 text-sm">Una vez envíes SOL a la wallet <strong>SDT-Sale</strong>, el equipo distribuirá los SDT manualmente según el precio/ronda vigente a la dirección remitente. Publicaremos TX públicas.</p></details>
+        <details class="group border border-white/10 rounded-2xl p-5 bg-white/[.03]"><summary class="cursor-pointer font-semibold">¿Habrá bloqueo de liquidez?</summary><p class="mt-3 text-white/80 text-sm">Sí. Tras el listing en DEX (Raydium/Orca), el LP se bloqueará por un período mínimo anunciado públicamente para aumentar la confianza.</p></details>
+        <details class="group border border-white/10 rounded-2xl p-5 bg-white/[.03]"><summary class="cursor-pointer font-semibold">¿Dónde veré el precio?</summary><p class="mt-3 text-white/80 text-sm">Tras el listing, podrás ver el precio y gráfico en agregadores como DEXTools/Birdeye. Antes del listing, solo habrá precios fijos por ronda de preventa.</p></details>
+      </div>
     </div>
   </section>
 
@@ -168,9 +247,9 @@
       <h2 class="text-4xl font-extrabold">Comunidad SDT</h2>
       <p class="mt-6 text-white/80">El alma de SDT es su comunidad. Comparte memes, participa en sorteos y vota iniciativas. El token del pueblo español contra Sánchez.</p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="#" class="glow px-6 py-3 rounded-2xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Twitter / X</a>
-        <a href="#" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Telegram</a>
-        <a href="#" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Discord</a>
+        <a href="https://x.com/SDTo_Oficial" target="_blank" rel="noopener" class="glow px-6 py-3 rounded-2xl bg-gradient-to-r from-solana1 to-solana2 font-semibold">Twitter / X</a>
+        <a href="https://www.instagram.com/sanchezdimisiontoken/" target="_blank" rel="noopener" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Instagram</a>
+        <a href="https://discord.gg/DJThgM4HZV" target="_blank" rel="noopener" class="px-6 py-3 rounded-2xl bg-white/10 font-semibold">Discord</a>
       </div>
     </div>
   </section>
